@@ -26,7 +26,7 @@
                                     <i class="fa fa-envelope-open text-primary mr-2"></i>
                                     <h6 class="font-weight-bold mb-0">Email Us</h6>
                                 </div>
-                                <p class="m-0">info@example.com</p>
+                                <p class="m-0">info@alphanewsgh.com</p>
                             </div>
                             <div class="mb-3">
                                 <div class="d-flex align-items-center mb-2">

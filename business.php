@@ -18,7 +18,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="section-title">
-                                <h4 class="m-0 text-uppercase font-weight-bold">Latest News</h4>
+                                <h4 class="m-0 text-uppercase font-weight-bold">Business News</h4>
                                 <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
                             </div>
                         </div>

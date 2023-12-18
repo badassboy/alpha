@@ -4,7 +4,7 @@
                 <h5 class="mb-4 text-white text-uppercase font-weight-bold">Get In Touch</h5>
                 <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>MW 37, HO</p>
                 <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>0544505743</p>
-                <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>info@alphanewsgh.com</p>
                 <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Follow Us</h6>
                 <div class="d-flex justify-content-start">
                     <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -43,27 +43,26 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="mb-4 text-white text-uppercase font-weight-bold">Categories</h5>
                 <div class="m-n1">
-                    <a href="" class="btn btn-sm btn-secondary m-1">Politics</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Business</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Corporate</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Business</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Health</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Education</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Science</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Business</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Foods</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Entertainment</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Travel</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Lifestyle</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Politics</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Business</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Corporate</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Business</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Health</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Education</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Science</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Business</a>
-                    <a href="" class="btn btn-sm btn-secondary m-1">Foods</a>
+                    
+                    <a href="business.php" class="btn btn-sm btn-secondary m-1">Business</a>
+                   
+                  
+                    
+                    <a href="education.php" class="btn btn-sm btn-secondary m-1">Education</a>
+                   
+                  
+                   
+                    <a href="entertainment.php" class="btn btn-sm btn-secondary m-1">Entertainment</a>
+                   
+                    
+                   
+                    <a href="politics.php" class="btn btn-sm btn-secondary m-1">Politics</a>
+                    <a href="sports.php" class="btn btn-sm btn-secondary m-1">Sports</a>
+                   
+                  
+                  
+                  
+                   
                 </div>
             </div>
             <!-- <div class="col-lg-3 col-md-6 mb-5">
