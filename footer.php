@@ -2,8 +2,8 @@
         <div class="row py-4">
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="mb-4 text-white text-uppercase font-weight-bold">Get In Touch</h5>
-                <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>MW 37, HO</p>
+                <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>0544505743</p>
                 <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
                 <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Follow Us</h6>
                 <div class="d-flex justify-content-start">
@@ -14,7 +14,8 @@
                     <a class="btn btn-lg btn-secondary btn-lg-square" href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
+
+            <!-- <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="mb-4 text-white text-uppercase font-weight-bold">Popular News</h5>
                 <div class="mb-3">
                     <div class="mb-2">
@@ -37,7 +38,8 @@
                     </div>
                     <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
                 </div>
-            </div>
+            </div> -->
+            
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="mb-4 text-white text-uppercase font-weight-bold">Categories</h5>
                 <div class="m-n1">
@@ -64,7 +66,7 @@
                     <a href="" class="btn btn-sm btn-secondary m-1">Foods</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
+            <!-- <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="mb-4 text-white text-uppercase font-weight-bold">Flickr Photos</h5>
                 <div class="row">
                     <div class="col-4 mb-3">
@@ -86,7 +88,7 @@
                         <a href=""><img class="w-100" src="img/news-110x110-1.jpg" alt=""></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">

@@ -100,11 +100,11 @@
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
                     <a href="index.php" class="nav-item nav-link active">Home</a>
-                    <a href="category.php" class="nav-item nav-link">Business</a>
-                    <a href="category.php" class="nav-item nav-link">Sports</a>
-                    <a href="category.php" class="nav-item nav-link">Politics</a>
-                    <a href="category.php" class="nav-item nav-link">Education</a>
-                    <a href="category.php" class="nav-item nav-link">Entertainment</a>
+                    <a href="business.php" class="nav-item nav-link">Business</a>
+                    <a href="sports.php" class="nav-item nav-link">Sports</a>
+                    <a href="politics.php" class="nav-item nav-link">Politics</a>
+                    <a href="education.php" class="nav-item nav-link">Education</a>
+                    <a href="entertainment.php" class="nav-item nav-link">Entertainment</a>
                     <!-- <a href="single.php" class="nav-item nav-link">Single News</a> -->
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>

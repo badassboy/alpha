@@ -1,3 +1,9 @@
+<?php
+
+  include("../functions.php");
+    $info = new News();
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -14,9 +20,10 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/sidestyle.css">
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <!-- Font Awesome cs -->
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+
+    
 
     <style type="text/css">
 
@@ -51,18 +58,18 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+                <h3>AlphaNews</h3>
             </div>
 
             <ul class="list-unstyled components">
                
                 <li>
-                    <a href="#" id="create_group" data-target="church_group" class="item">Create Group</a>
+                    <a href="#" id="create_group" data-target="church_group" class="item">Create News</a>
                 </li>
                
                
                 <li>
-                    <a href="#" id="group" data-target="add_member" class="item">Add member to group</a>
+                    <a href="#" id="group" data-target="add_member" class="item">All News</a>
                 </li>
 
 
@@ -93,32 +100,13 @@
                 </div>
             </nav>
 
-            <h2>Headlines</h2>
+            <h2>News</h2>
         <?php include("content_form.php"); ?>
             <!-- end of church group divs -->
 
            
 
-            <div class="container add_member" id="add_member">
-              <div id="msg"></div>
-              <header>Add member to group</header>
-              <form method="post" id="member_group">
-
-                <div class="form-group">
-                  <label>Member Name</label>
-                  <input type="text" class="form-control" name="member_name" placeholder="Member Name">
-                </div>
-
-                <div class="form-group">
-                    <label>Group Name</label>
-                    <select class="form-control" id="existing_groups" name="groups">
-                      <option>Select</option>
-                    </select>
-                  </div>
-               
-                <button type="submit" class="btn btn-primary">Add Member</button>
-              </form>
-            </div>
+           <?php include("allnews.php"); ?>
 
            
 
@@ -133,7 +121,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    
     <!-- Bootstrap JS -->
-   <script type="text/javascript" src="../bootstrap/dist/js/bootstrap.js"></script>
+   <script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
 
     <script type="text/javascript">
 
@@ -165,65 +153,14 @@
 
        
 
-        // ajax form submission fir adding member to group
-        $(document).ready(function(){
-
-          $("#member_group").submit(function(e){
-            e.preventDefault();
-            $.ajax({
-              type:"post",
-              url:"memberchgroup.php",
-              data:$("#member_group").serialize(),
-            })
-          
-            .done(function(data){
-              $("#msg").html(data);
-            })
-            .fail(function(data){
-              $("#msg").html(data);
-
-            });
-
-          $("#member_group").find('input').val(" ");
-          });
-
-        });
-
+        
                    
 
 
 
 
 
-      // ajax for getting displaying groupsin select form
-      $(document).ready(function(){
-
-            $.ajax({
-              url:"chgroupajax.php",
-              type:"get",
-              dataType:"JSON",
-              success:function(response){
-                console.log(response);
-                  var len = response.length;
-                  for (var i = 0; i < len; i++) {
-
-
-                      var my_groups = response[i]["created_group"];
-
-                      var option_string = "<option>" + my_groups + "</option>";
-
-                       $("#existing_groups").append(option_string);
-
-                     
-                  }
-              },
-              error:function(response){
-                  console.log("Error: "+ response);
-              }
-            });
-
-      });
-
+      
                
 
 

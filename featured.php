@@ -11,6 +11,7 @@
         // var_dump($data);
         foreach ($data as $row) {
         $picture = $row['picture'];
+        $id = $row['newsId'];
         
 
         ?>
@@ -25,7 +26,8 @@
                         href="">Business</a>
 <a class="text-white" href=""><small><?php echo $row['news_date']; ?></small></a>
                 </div>
-    <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href=""><?php echo $row['title']; ?></a>
+    <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="single.php?link=<?php echo  $id; ?>">
+        <?php echo $row['title']; ?></a>
             </div>
 
       

@@ -59,7 +59,7 @@ class News {
 	}
 
 	// post news
-public function addNews($title,$category,$short_desc,$file_name){
+public function addNews($title,$category,$sector,$short_desc,$fullDesc,$file_name){
 		$dbh = DB();
 		$current_date = date("Y/m/d");
 		 $path = "pics/";
@@ -90,9 +90,9 @@ public function addNews($title,$category,$short_desc,$file_name){
 
    	if (move_uploaded_file($file_tmp, "pics/".$file_name)) {
 
-$stmt = $dbh->prepare("INSERT INTO news(title,category,news_date,short_desc,picture) VALUES(?,?,?,?,?)");
+$stmt = $dbh->prepare("INSERT INTO news(title,category,sector,news_date,short_desc,full_desc,picture) VALUES(?,?,?,?,?,?,?)");
 
-$stmt->execute([$title,$category,$current_date, $short_desc,"pics/".$file_name]);
+$stmt->execute([$title,$category,$sector,$current_date, $short_desc,$fullDesc,"pics/".$file_name]);
 
 		$added = $stmt->rowCount();
 		if ($added>0) {
@@ -108,7 +108,7 @@ $stmt->execute([$title,$category,$current_date, $short_desc,"pics/".$file_name])
       	
       }
 
-      //fetch featured news
+      //fetch headlines news
 	public function headingNews(){
 		$dbs = DB();
 $stmt = $dbs->prepare("SELECT * FROM news WHERE category = 'headline'");
@@ -130,6 +130,19 @@ $stmt = $dbs->prepare("SELECT * FROM news WHERE category = 'featured'");
 
 	}
 
+	//fetch latest news
+	public function latestNews(){
+		$dbs = DB();
+$stmt = $dbs->prepare("SELECT * FROM news WHERE category = 'latest'");
+		$stmt->execute();
+	$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	return $data;		
+
+	}
+
+
+
 
 	//fetch trending news
 	public function trendingNews(){
@@ -145,15 +158,92 @@ $stmt = $dbs->prepare("SELECT * FROM news WHERE category = 'trending'");
 
 
 	//fetch trending news
-// 	public function featuredNews($category){
-// 		$dbs = DB();
-// $stmt = $dbs->prepare("SELECT * FROM news WHERE category =?");
-// 		$stmt->execute([$category]);
-// 	$data = $stmt->fetch(PDO::FETCH_ASSOC);
+	public function detailedNews($id){
+		$dbs = DB();
+$stmt = $dbs->prepare("SELECT * FROM news WHERE newsId = ?");
+		$stmt->execute([$id]);
+	$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// 	return $data;		
+	return $data;		
 
-// 	}
+	}
+
+	// business news
+	public function businessNews(){
+		$dbs = DB();
+$stmt = $dbs->prepare("SELECT * FROM news WHERE sector = 'business'");
+		$stmt->execute();
+	$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	return $data;		
+
+	}
+
+	public function sportsNews(){
+		$dbs = DB();
+$stmt = $dbs->prepare("SELECT * FROM news WHERE sector = 'sports'");
+		$stmt->execute();
+	$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	return $data;		
+
+	}
+
+	public function politicsNews(){
+		$dbs = DB();
+$stmt = $dbs->prepare("SELECT * FROM news WHERE sector = 'politics'");
+		$stmt->execute();
+	$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	return $data;		
+
+	}
+
+	public function educationNews(){
+		$dbs = DB();
+$stmt = $dbs->prepare("SELECT * FROM news WHERE sector = 'education'");
+		$stmt->execute();
+	$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	return $data;		
+
+	}
+
+	public function entertainmentNews(){
+		$dbs = DB();
+$stmt = $dbs->prepare("SELECT * FROM news WHERE sector = 'entertainment'");
+		$stmt->execute();
+	$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	return $data;		
+
+	}
+
+	// admin section
+	// get all news
+	public function allNews(){
+		$dbs = DB();
+$stmt = $dbs->prepare("SELECT * FROM news");
+		$stmt->execute();
+	$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	return $data;		
+
+	}
+
+	// delete news
+	public function deleteNews($id){
+		$dbs = DB();
+$stmt = $dbs->prepare("DELETE FROM news WHERE newsId=?");
+		$stmt->execute([$id]);
+		if ($stmt->rowCount()>0) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+
 
 
 	

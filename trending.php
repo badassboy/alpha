@@ -6,9 +6,11 @@
     <div class="bg-white border border-top-0 p-3">
 
         <?php
-
+        $id = "";
         $data = $info->trendingNews();
         foreach ($data as $row) {
+            $id = $row['newsId'];
+
         
         ?>
 
@@ -21,7 +23,7 @@
             <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
     <a class="text-body" href=""><small></small><?php echo $row['news_date']; ?></a>
         </div>
-<a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href=""><?php echo $row['title']; ?></a>
+<a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="single.php?link=<?php echo $id; ?>"><?php echo $row['title']; ?></a>
     </div>
 </div>
 <?php } ?>

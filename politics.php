@@ -1,58 +1,20 @@
-<?php 
+    <?php 
 
-include("functions.php");
-$info = new News();
+    include("functions.php");
+    $info = new News();
 
-    include("header.php"); 
+    include("header.php");
 
-    ?>
-
-
-    <!-- Main News Slider Start -->
-    <div class="container-fluid">
-        <div class="row">
-
-           <?php include("headlines.php"); ?>
-            <!-- end of headlines -->
-
-           <?php include("sidenews.php"); ?>
-            <!-- end of sidenews -->
-        </div>
-    </div>
-    <!-- Main News Slider End -->
-
-
-    <!-- Breaking News Start -->
-    <div class="container-fluid bg-dark py-3 mb-3">
-        <div class="container">
-            <div class="row align-items-center bg-dark">
-                <div class="col-12">
-                    <div class="d-flex justify-content-between">
-                        <div class="bg-primary text-dark text-center font-weight-medium py-2" style="width: 170px;">Breaking News</div>
-                        <div class="owl-carousel tranding-carousel position-relative d-inline-flex align-items-center ml-3"
-                            style="width: calc(100% - 170px); padding-right: 90px;">
-                            <div class="text-truncate"><a class="text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt, sed faucibus nisl sodales</a></div>
-                            <div class="text-truncate"><a class="text-white text-uppercase font-weight-semi-bold" href="">Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt, sed faucibus nisl sodales</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Breaking News End -->
-
-
-    <!-- Featured News Slider Start -->
-    <?php include("featured.php"); ?>
-    <!-- Featured News Slider End -->
+     ?>
+    <!-- Navbar End -->
 
 
     <!-- News With Sidebar Start -->
-    <div class="container-fluid">
+    <div class="container-fluid mt-5 pt-3">
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-8">
+                 <div class="col-lg-8">
                     <div class="row">
                         <div class="col-12">
                             <div class="section-title">
@@ -63,7 +25,7 @@ $info = new News();
 
                         <?php 
 
-                        $data =  $info->latestNews();
+                        $data =  $info->politicsNews();
                         foreach ($data as $row) {
                             $id = $row['newsId'];
                         
@@ -112,6 +74,10 @@ $info = new News();
                         <!-- end here -->
                     </div>
                 </div>
+
+              
+
+                <!-- end of col-lg8 -->
                 
                 <div class="col-lg-4">
                     <!-- Social Follow Start -->
@@ -119,11 +85,18 @@ $info = new News();
                     <!-- Social Follow End -->
 
                     <!-- Ads Start -->
-                   <!-- advert coming -->
+                    <!-- <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Advertisement</h4>
+                        </div>
+                        <div class="bg-white text-center border border-top-0 p-3">
+                            <a href=""><img class="img-fluid" src="img/news-800x500-2.jpg" alt=""></a>
+                        </div>
+                    </div> -->
                     <!-- Ads End -->
 
                     <!-- Popular News Start -->
-                    <?php include("trending.php"); ?>
+                   <?php include("trending.php"); ?>
                     <!-- Popular News End -->
 
                     <!-- Newsletter Start -->
@@ -131,7 +104,7 @@ $info = new News();
                     <!-- Newsletter End -->
 
                     <!-- Tags Start -->
-                    <!-- <div class="mb-3">
+                    <div class="mb-3">
                         <div class="section-title mb-0">
                             <h4 class="m-0 text-uppercase font-weight-bold">Tags</h4>
                         </div>
@@ -149,7 +122,7 @@ $info = new News();
                                 <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- Tags End -->
                 </div>
             </div>
