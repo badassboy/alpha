@@ -19,6 +19,7 @@
       <option value="headline">Headline</option>
       <option value="featured">Featured</option>
       <option value="latest">Latest</option>
+      <option value="general">General</option>
     </select>
     
   </div>

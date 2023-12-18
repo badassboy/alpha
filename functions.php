@@ -119,6 +119,18 @@ $stmt = $dbs->prepare("SELECT * FROM news WHERE category = 'headline'");
 
 	}
 
+	// general news
+	public function generalNews(){
+		$dbs = DB();
+$stmt = $dbs->prepare("SELECT * FROM news WHERE category = 'general'");
+		$stmt->execute();
+	$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	return $data;		
+
+	}
+
+
 //fetch featured news
 	public function featuredNews(){
 		$dbs = DB();

@@ -20,7 +20,7 @@
 
     <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
         <div class="mb-2">
-            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+            <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Trending</a>
     <a class="text-body" href=""><small></small><?php echo $row['news_date']; ?></a>
         </div>
 <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="single.php?link=<?php echo $id; ?>"><?php echo $row['title']; ?></a>

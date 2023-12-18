@@ -24,7 +24,7 @@ $info = new News();
 
     <!-- Breaking News Start -->
     <div class="container-fluid bg-dark py-3 mb-3">
-        <div class="container">
+        <!-- <div class="container">
             <div class="row align-items-center bg-dark">
                 <div class="col-12">
                     <div class="d-flex justify-content-between">
@@ -37,7 +37,7 @@ $info = new News();
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- Breaking News End -->
 

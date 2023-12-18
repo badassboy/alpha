@@ -23,7 +23,7 @@
             <div class="overlay">
                 <div class="mb-2">
                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                        href="">Business</a>
+                        href="">Featured</a>
 <a class="text-white" href=""><small><?php echo $row['news_date']; ?></small></a>
                 </div>
     <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="single.php?link=<?php echo  $id; ?>">

@@ -10,7 +10,7 @@
 
     <!-- Breaking News Start -->
     <div class="container-fluid mt-5 mb-3 pt-3">
-        <div class="container">
+        <!-- <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
                     <div class="d-flex justify-content-between">
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- Breaking News End -->
 
