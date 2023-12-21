@@ -468,6 +468,8 @@ h6, .h6 {
   }
 }
 
+
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -4090,6 +4092,8 @@ input[type="button"].btn-block {
     padding-left: 0;
   }
 }
+
+
 
 @media (min-width: 576px) {
   .navbar-expand-sm {
@@ -9682,3 +9686,5 @@ h6,
   font-weight:normal;
   font-size: 15px;
 }
+
+
