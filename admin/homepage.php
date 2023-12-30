@@ -10,8 +10,6 @@ if (!isset($_SESSION['id']) || empty($_SESSION['id'])) {
 
 ob_end_flush();
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
